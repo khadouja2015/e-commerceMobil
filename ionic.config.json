@@ -1,0 +1,7 @@
+{
+  "name": "Milca",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

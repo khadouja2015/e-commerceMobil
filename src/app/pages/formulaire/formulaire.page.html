@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulaire</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+Information du client
+<ion-item>Total: {{tabVariable}} DTN</ion-item>
+<form [formGroup]="todo" (ngSubmit)="logForm()">
+<!-- Default Input -->
+<ion-label>Nom :</ion-label>
+<ion-input formControlName="nom"></ion-input>
+<ion-label>Prenom :</ion-label>
+<!-- Input with value -->
+
+<ion-input formControlName="prenom"></ion-input>
+<ion-label>Tel :</ion-label>
+<!-- Input with placeholder -->
+<ion-input formControlName="Tel"></ion-input>
+<ion-label>Adresse :</ion-label>
+<!-- Input with value -->
+<ion-input formControlName="Adresse"></ion-input>
+<ion-label>Email :</ion-label>
+<!-- Input with placeholder -->
+<ion-input formControlName="email"></ion-input>
+
+<ion-button color="warning"  fill="outline" type="submit" ><ion-icon slot="start" name="star"></ion-icon>Submit</ion-button>
+    </form>
+</ion-content>
